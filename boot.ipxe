@@ -1,3 +1,5 @@
 #!ipxe
-echo "Hello, World!"
-
+echo "Welcome to the PW iPXE CentOS kickstarter"
+kernel -n img http://10.100.102.22:8000/images/pxeboot/vmlinuz ks= http://10.100.102.22:8000/isolinux/isolinux.cfg
+initrd  http://10.100.102.22:8000/images/pxeboot/initrd.img
+boot img
