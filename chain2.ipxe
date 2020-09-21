@@ -5,6 +5,6 @@ sleep 3
 echo "dhcp done"
 echo IP address: ${net0/ip} ; echo Subnet mask: ${net0/netmask}
 route
-ping -c 1 10.100.102.22  || echo "Failed 22"
+ping -c 1 10.100.102.17  || echo "Failed 17"
 ping -c 1 10.100.102.1  || echo "Failed 1"
-chain http://10.100.102.22:8001/menu.ipxe || goto loop
+chain http://10.100.102.17:8001/menu.ipxe || goto loop
