@@ -4,4 +4,5 @@ dhcp
 sleep 3
 echo "dhcp done"
 echo IP address: ${net0/ip} ; echo Subnet mask: ${net0/netmask}
+ping 10.100.102.22 || echo "Failed"
 chain http://10.100.102.22:8001/menu.ipxe || goto loop
