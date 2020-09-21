@@ -1,3 +1,0 @@
-#!ipxe
-dhcp net0
-chain http://10.100.102.22:8001/menu.ipxe
