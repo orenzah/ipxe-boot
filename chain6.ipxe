@@ -1,10 +1,7 @@
 #!ipxe
 dhcp net0
-dhcp net1
 sleep 10
 echo "dhcp done"
-sleep 10
+sleep 3
 echo "dhcp done 2"
-sleep 10
-echo "dhcp done 3"
 chain http://10.100.102.22:8001/menu.ipxe
